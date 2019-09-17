@@ -1,0 +1,15 @@
+title: Azimuth
+logo_img: images/logo.png
+has_nav: true
+menu:
+  - label: Home
+    url: "/"
+  - label: Features
+    url: "/features"
+  - label: Pricing
+    url: "/pricing"
+  - label: Style Guide
+    url: "/style-guide"
+actions:
+  - label: Sing Up
+    url: "/signup"
