@@ -36,5 +36,12 @@ module.exports = {
         typeName: 'socialData',
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/home.md',
+        typeName: 'homeData',
+      },
+    },
   ]
 }
