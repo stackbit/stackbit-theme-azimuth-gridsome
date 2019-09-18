@@ -57,5 +57,26 @@ module.exports = {
         typeName: 'pricingData',
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/style-guide.md',
+        typeName: 'styleGuideData',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/signup.md',
+        typeName: 'signupData',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/about.md',
+        typeName: 'aboutData',
+      },
+    },
   ]
 }

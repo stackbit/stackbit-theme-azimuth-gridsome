@@ -27,7 +27,7 @@ module.exports = function (api) {
     data.allBlogPost.edges.forEach(({ node }) => {
       createPage({
         path: `${node.path}`,
-        component: './src/pages/BlogPost.vue',
+        component: './src/templates/BlogPost.vue',
         context: {
           id: node.id,
           path: node.path,

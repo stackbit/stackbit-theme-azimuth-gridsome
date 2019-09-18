@@ -12,7 +12,7 @@ export default {
   },
   computed: {
     data() {
-      return this.$static.aboutData.edges[0].node;
+      return this.$static.signupData.edges[0].node;
     },
   },
   components: {
@@ -22,8 +22,8 @@ export default {
 </script>
 
 <static-query>
-  query aboutData {
-    aboutData: allaboutData {
+  query signupData {
+    signupData: allsignupData {
       edges {
         node {
         	title
