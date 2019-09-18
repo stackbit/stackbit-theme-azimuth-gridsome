@@ -42,6 +42,16 @@
 	      </div>
 	    </div>
 	  </div>
+	  <div class="site-info outer">
+	    <div class="inner">
+	    	<span v-html="footerData.content" />
+	      &nbsp;
+	      <span v-for="link in footerData.links">
+	     	 	<a v-if="link.new_window" :href="link.url" target="_blank" rel="noopener" v-html="link.text" />
+	     	 	<a v-else :href="link.url" v-html="link.text" />
+	      </span>
+	    </div>
+	  </div>
 	</footer>
 </template>
 
