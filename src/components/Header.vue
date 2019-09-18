@@ -78,24 +78,6 @@
 	    headerData() {
 	      return this.$static.headerData.edges[0].node;
 	    },
-	  },
-	  mounted() {
-			var menuToggle = document.querySelectorAll('.menu-toggle');
-
-			for (var i = 0; i < menuToggle.length; i++) {
-			  menuToggle[i].addEventListener('click', function(e){
-			    document.body.classList.toggle('menu--opened');
-			    e.preventDefault();
-			  },false);
-			}
-
-			document.body.classList.remove('menu--opened');
-
-			window.addEventListener('resize', function () {
-			  if (menuToggle.offsetParent === null) {
-			    document.body.classList.remove('menu--opened');
-			  }
-			}, true);
 	  }
 	};
 </script>

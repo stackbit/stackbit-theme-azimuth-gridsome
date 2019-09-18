@@ -50,5 +50,12 @@ module.exports = {
         typeName: 'featuresData',
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/pricing.md',
+        typeName: 'pricingData',
+      },
+    },
   ]
 }
