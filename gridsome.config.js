@@ -43,5 +43,12 @@ module.exports = {
         typeName: 'homeData',
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/features.md',
+        typeName: 'featuresData',
+      },
+    },
   ]
 }

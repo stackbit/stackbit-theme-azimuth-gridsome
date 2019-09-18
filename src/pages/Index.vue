@@ -17,7 +17,7 @@
 
   export default {
     metaInfo: {
-      title: 'Hello, world!'
+      title: 'Home - Stackbit Azimuth Theme'
     },
     computed: {
       homeData() {

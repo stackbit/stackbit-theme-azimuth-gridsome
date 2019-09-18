@@ -2,13 +2,13 @@
 
 ## Quickstart
 
-### Gridsome CLI.
+#### Gridsome CLI.
 
 ```
 npm install --global @gridsome/cli
 ``` 
 
-### Start the local development server.
+#### Start the local development server.
 
 ```
 yarn 
@@ -22,7 +22,7 @@ npm install
 npm run develop	
 ```
 
-### Build
+#### Build
 
 ```
 yarn build
