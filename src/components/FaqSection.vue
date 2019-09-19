@@ -5,30 +5,24 @@
 	      <h2 class="block-title" v-html="data.title" />
 	      <p class="block-subtitle" v-if="data.subtitle" v-html="data.subtitle" />
 	    </div>
-	    <dl class="faq-accordion" v-if="data.faqitems">
+	    <div class="faq-accordion" v-if="data.faqitems">
 	    	<template v-for="faqitem in data.faqitems">
-		      <dt class="accordion-header" >
-		        <button class="accordion-trigger">
-		          <div class="accordion-title">{{ faqitem.question }}</div>
-		          <div class="accordion-icon icon-plus"></div>
-		        </button>
-		      </dt>
-		      <dd class="accordion-panel">
-		        <div class="accordion-content">
-		         	<p v-html="faqitem.answer" />
-		        </div>
-		      </dd>
+		      <FaqDropDown :data="faqitem" />
 		    </template>
-	    </dl>
+	    </div>
 	  </div>
 	</section>
 </template>
 
 <script>
+	import FaqDropDown from "./FaqDropDown"
 	export default {
 		name: 'FaqSection',
 		props: { 
 			data: Object
+		},
+		components: {
+			FaqDropDown
 		}
 	}
 </script>

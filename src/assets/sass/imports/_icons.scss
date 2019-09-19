@@ -122,3 +122,26 @@
     transform: rotate(-90deg);
   }
 }
+
+.icon-minus {
+  background: _palette(accent);
+  border-radius: 50%;
+  color: #fff;
+  height: 24px;
+  position: relative;
+  width: 24px;
+
+  &:before,
+  &:after {
+    background: currentColor;
+    border-radius: 1px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -8px;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+  }
+}

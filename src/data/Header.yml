@@ -11,5 +11,5 @@ menu:
   - label: Style Guide
     url: "/style-guide"
 actions:
-  - label: Sing Up
+  - label: Sign Up
     url: "/signup"
