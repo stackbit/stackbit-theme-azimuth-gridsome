@@ -26,7 +26,7 @@
 		name: 'ContentSection',
 		props: { 
 			data: Object,
-			content: Object
+			content: String
 		},
 		components: {
 			CtaButton

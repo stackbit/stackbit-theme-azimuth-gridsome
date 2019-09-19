@@ -78,5 +78,12 @@ module.exports = {
         typeName: 'aboutData',
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/contact.md',
+        typeName: 'contactData',
+      },
+    },
   ]
 }

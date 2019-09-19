@@ -6,7 +6,7 @@
 	        <h1 class="post-title">{{ data.title }}</h1>
 	      </header>
 	      <div class="post-thumbnail" v-if="data.img_path">
-	        <g-image :src="data.img_path" :alt="data.title" />
+	        <g-image :src="'/'+data.img_path" :alt="data.title" />
 	      </div>
 	      <div class="post-subtitle" v-if="data.subtitle">
 	        {{ data.subtitle }}
