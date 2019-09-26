@@ -67,10 +67,15 @@
 
   a:not(.button) {
     border: 0;
+    outline: none;
     color: inherit;
     display: inline-block;
     text-decoration: none;
 
+    &.active--exact {
+      color: _palette(meta);
+    }
+    
     &:hover,
     &:focus {
       color: _palette(meta);
